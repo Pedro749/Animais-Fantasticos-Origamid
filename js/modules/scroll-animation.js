@@ -20,5 +20,6 @@ export default class AnimacaoScroll {
       this.animaScroll();
       window.addEventListener('scroll', this.animaScroll);
     }
+    return this;
   }
 }
