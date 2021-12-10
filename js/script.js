@@ -8,6 +8,7 @@ import DropDownMenu from './modules/dropdown-menu.js';
 import MenuMobile from './modules/menu-mobile.js';
 import fetchAnimais from './modules/fetch-animais.js';
 import Funcionamento from './modules/funcionamento.js';
+import SlideNav from './modules/slide-nav.js';
 
 const scrollSuave = new ScrollSuave('[data-menu="suave"] a[href^="#"]');
 scrollSuave.init();
@@ -37,3 +38,7 @@ const funcionamento = new Funcionamento('[data-semana]');
 funcionamento.init();
 
 fetchAnimais('./animaisapi.json', '.numeros-grid');
+
+const slide = new SlideNav('.slide', '.slide-wrapper');
+slide.init();
+slide.addControl('.custom-controls');
